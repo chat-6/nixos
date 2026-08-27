@@ -8,6 +8,7 @@
     ./boot.nix
     ./graphics.nix
     ./wifi.nix
+    ./portals.nix
     ./users.nix
     ./programs.nix
     ./locale.nix
@@ -17,14 +18,10 @@
     ../../modules/networking-base.nix
     ../../modules/locale-base.nix
     ../../modules/audio-base.nix
-    ../../modules/flatpak.nix
     ../../modules/vim.nix
   ];
 
   networking.hostName = "macbook";
-
-  # Flatpak
-  services.flatpak.enable = true;
 
   # Allow unfree packages (needed for the broadcom_sta wifi driver)
   nixpkgs.config.allowUnfree = true;

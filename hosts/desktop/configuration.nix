@@ -20,14 +20,10 @@
     ../../modules/networking-base.nix
     ../../modules/locale-base.nix
     ../../modules/audio-base.nix
-    ../../modules/flatpak.nix
     ../../modules/vim.nix
   ];
 
   networking.hostName = "desktop";
-
-  # Flatpak
-  services.flatpak.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

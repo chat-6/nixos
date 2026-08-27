@@ -10,7 +10,6 @@ Multi-host flake. `modules/` is shared between every machine;
 │   ├── networking-base.nix   # NetworkManager
 │   ├── locale-base.nix       # timezone + i18n (not keymap)
 │   ├── audio-base.nix        # pipewire
-│   ├── flatpak.nix
 │   └── vim.nix
 └── hosts/
     ├── desktop/               # Nvidia desktop, Plasma, Steam
