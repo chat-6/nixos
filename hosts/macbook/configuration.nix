@@ -25,6 +25,11 @@
 
   # Allow unfree packages (needed for the broadcom_sta wifi driver)
   nixpkgs.config.allowUnfree = true;
+ 
+  #fuckass broadcom driver
+  nixpkgs.config.permittedInsecurePackages = [
+    "broadcom-sta-6.30.223.271-59-6.12.93"
+  ];
 
   # Keep this at whatever the installer originally wrote -- don't
   # bump it to match the desktop's.

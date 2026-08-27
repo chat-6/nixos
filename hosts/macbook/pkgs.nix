@@ -11,5 +11,6 @@
     fish
     unzip
     p7zip
+    neovim
   ];
 }
