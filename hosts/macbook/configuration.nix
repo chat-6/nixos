@@ -13,6 +13,7 @@
     ./programs.nix
     ./locale.nix
     ./pkgs.nix
+    ./de.nix
 
     # Shared
     ../../modules/networking-base.nix
